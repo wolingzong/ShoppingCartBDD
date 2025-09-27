@@ -6,14 +6,35 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A93414282E875F00009BF9F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A93414272E875EF8009BF9F8 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A934141C2E875A0B009BF9F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A93413EF2E87596A009BF9F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A93413F62E87596A009BF9F8;
+			remoteInfo = ShoppingCartBDD;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		A93413F72E87596A009BF9F8 /* ShoppingCartBDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingCartBDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A93414182E875A0B009BF9F8 /* ShoppingCartBDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingCartBDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A93414272E875EF8009BF9F8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A93413F92E87596A009BF9F8 /* ShoppingCartBDD */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ShoppingCartBDD;
+			sourceTree = "<group>";
+		};
+		A93414192E875A0B009BF9F8 /* ShoppingCartBDDTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ShoppingCartBDDTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +47,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A93414152E875A0B009BF9F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A93413EE2E87596A009BF9F8 = {
 			isa = PBXGroup;
 			children = (
+				A93414272E875EF8009BF9F8 /* README.md */,
 				A93413F92E87596A009BF9F8 /* ShoppingCartBDD */,
+				A93414192E875A0B009BF9F8 /* ShoppingCartBDDTests */,
 				A93413F82E87596A009BF9F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				A93413F72E87596A009BF9F8 /* ShoppingCartBDD.app */,
+				A93414182E875A0B009BF9F8 /* ShoppingCartBDDTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +101,29 @@
 			productReference = A93413F72E87596A009BF9F8 /* ShoppingCartBDD.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A93414172E875A0B009BF9F8 /* ShoppingCartBDDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A934141E2E875A0B009BF9F8 /* Build configuration list for PBXNativeTarget "ShoppingCartBDDTests" */;
+			buildPhases = (
+				A93414142E875A0B009BF9F8 /* Sources */,
+				A93414152E875A0B009BF9F8 /* Frameworks */,
+				A93414162E875A0B009BF9F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A934141D2E875A0B009BF9F8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A93414192E875A0B009BF9F8 /* ShoppingCartBDDTests */,
+			);
+			name = ShoppingCartBDDTests;
+			packageProductDependencies = (
+			);
+			productName = ShoppingCartBDDTests;
+			productReference = A93414182E875A0B009BF9F8 /* ShoppingCartBDDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +136,10 @@
 				TargetAttributes = {
 					A93413F62E87596A009BF9F8 = {
 						CreatedOnToolsVersion = 16.4;
+					};
+					A93414172E875A0B009BF9F8 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = A93413F62E87596A009BF9F8;
 					};
 				};
 			};
@@ -100,12 +158,21 @@
 			projectRoot = "";
 			targets = (
 				A93413F62E87596A009BF9F8 /* ShoppingCartBDD */,
+				A93414172E875A0B009BF9F8 /* ShoppingCartBDDTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A93413F52E87596A009BF9F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A93414282E875F00009BF9F8 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A93414162E875A0B009BF9F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +189,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A93414142E875A0B009BF9F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A934141D2E875A0B009BF9F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A93413F62E87596A009BF9F8 /* ShoppingCartBDD */;
+			targetProxy = A934141C2E875A0B009BF9F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A93414002E87596C009BF9F8 /* Debug */ = {
@@ -225,6 +307,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -298,6 +381,40 @@
 			};
 			name = Release;
 		};
+		A934141F2E875A0B009BF9F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = watson.ShoppingCartBDDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShoppingCartBDD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShoppingCartBDD";
+			};
+			name = Debug;
+		};
+		A93414202E875A0B009BF9F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = watson.ShoppingCartBDDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShoppingCartBDD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShoppingCartBDD";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -315,6 +432,15 @@
 			buildConfigurations = (
 				A93414032E87596C009BF9F8 /* Debug */,
 				A93414042E87596C009BF9F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A934141E2E875A0B009BF9F8 /* Build configuration list for PBXNativeTarget "ShoppingCartBDDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A934141F2E875A0B009BF9F8 /* Debug */,
+				A93414202E875A0B009BF9F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
